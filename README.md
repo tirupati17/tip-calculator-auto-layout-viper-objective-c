@@ -1,12 +1,12 @@
 
-![Language](https://img.shields.io/badge/language-Swift%202-orange.svg)
+![Language](https://img.shields.io/badge/language-objective--c-green.svg)
 ![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
 
 ![TIP-Calculator](https://raw.githubusercontent.com/tirupati17/tip-calculator-auto-layout-viper-objective-c/master/TipCalculator/Resources/Images/iphone_5s.png)
 
 Calculate your tip and split the bill between any number of people.
 
-This app is available in the [AppStore](https://itunes.apple.com/us/app/emi-calculator-for-home-personal/id1105890730?ls=1&mt=8). Learn more [here](http://www.celerstudio.com).
+This app is available in the [AppStore](https://itunes.apple.com/us/app/tip-calculator-calculate-your/id1139456857?ls=1&mt=8). Learn more [here](http://www.celerstudio.com).
 
 #Description
 
@@ -14,7 +14,7 @@ Calculate your tip and split the bill between any number of people.
 
 #Setup
 * Run ```pod install```
-* Run ```open EmiCalculator.xcworkspace```
+* Run ```open TipCalculator.xcworkspace```
 
 #Contribute
 Want to contribute? I would really appreciate a hand with the development to add more finance related features in this app.
