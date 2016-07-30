@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TipCalculatorWireFrame.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UINavigationController *nv = [[UINavigationController alloc] init];
+    self.window.rootViewController = nv;
+    
+    [self installRootViewControllerIntoWindow:self.window];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -37,6 +44,10 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 
+}
+
+- (void)installRootViewControllerIntoWindow:(UIWindow *)window {
+    [TipCalculatorWireFrame presentTipCalculatorModuleFrom:window];
 }
 
 @end

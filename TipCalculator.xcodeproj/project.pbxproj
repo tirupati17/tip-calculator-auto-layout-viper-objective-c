@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		159EE0E2619E9CA1C97CFD9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC96F0E04AEF47A35D2240A5 /* libPods.a */; };
+		D5BBD3731D4CC2A7003E464C /* splash_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */; };
 		D5BF7CDE1CE9C2E000B87908 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CCD1CE9C2E000B87908 /* AppDelegate.m */; };
 		D5BF7CE11CE9C2E000B87908 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CCE1CE9C2E000B87908 /* main.m */; };
 		D5BF7CE41CE9C2E000B87908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */; };
@@ -27,8 +28,15 @@
 		D5BF7D0B1CE9C95200B87908 /* TipCalculatorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CFE1CE9C95200B87908 /* TipCalculatorPresenter.m */; };
 		D5BF7D0C1CE9C95200B87908 /* TipCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */; };
 		D5BF7D0D1CE9C95200B87908 /* TipCalculatorWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7D061CE9C95200B87908 /* TipCalculatorWireFrame.m */; };
+		D5C25F151CF8544E001E5F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C25F141CF8544E001E5F9B /* Main.storyboard */; };
 		D5E755C61CE47E0F00E74FD4 /* TipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E755C51CE47E0F00E74FD4 /* TipCalculatorTests.m */; };
 		D5E755D11CE47E0F00E74FD4 /* TipCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E755D01CE47E0F00E74FD4 /* TipCalculatorUITests.m */; };
+		D5EEC68D1CF9CAD70057C365 /* TCRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */; };
+		D5EEC6911CF9D9080057C365 /* TCBillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */; };
+		D5EEC6941CF9D9210057C365 /* TCTipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */; };
+		D5EEC6971CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */; };
+		D5EEC69A1CF9D96D0057C365 /* TCResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */; };
+		D5EEC69F1CF9DF560057C365 /* ANStepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC69E1CF9DF560057C365 /* ANStepperView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,8 @@
 		945C3D8BB3EB35A2E174829B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ABD94C536D95F3ABE3342412 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AC96F0E04AEF47A35D2240A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5BBD3711D4C85F4003E464C /* TipCalculatorKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorKeys.h; sourceTree = "<group>"; };
+		D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_logo@2x.png"; sourceTree = "<group>"; };
 		D5BF7CCC1CE9C2E000B87908 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D5BF7CCD1CE9C2E000B87908 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D5BF7CCE1CE9C2E000B87908 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,9 +81,10 @@
 		D5BF7CFE1CE9C95200B87908 /* TipCalculatorPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorPresenter.m; sourceTree = "<group>"; };
 		D5BF7D001CE9C95200B87908 /* TipCalculatorProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorProtocols.h; sourceTree = "<group>"; };
 		D5BF7D021CE9C95200B87908 /* TipCalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorView.h; sourceTree = "<group>"; };
-		D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorView.m; sourceTree = "<group>"; };
+		D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorView.m; sourceTree = "<group>"; wrapsLines = 0; };
 		D5BF7D051CE9C95200B87908 /* TipCalculatorWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorWireFrame.h; sourceTree = "<group>"; };
 		D5BF7D061CE9C95200B87908 /* TipCalculatorWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorWireFrame.m; sourceTree = "<group>"; };
+		D5C25F141CF8544E001E5F9B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D5E755A81CE47E0E00E74FD4 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E755C11CE47E0F00E74FD4 /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E755C51CE47E0F00E74FD4 /* TipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorTests.m; sourceTree = "<group>"; };
@@ -81,6 +92,18 @@
 		D5E755CC1CE47E0F00E74FD4 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5E755D01CE47E0F00E74FD4 /* TipCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorUITests.m; sourceTree = "<group>"; };
 		D5E755D21CE47E0F00E74FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5EEC68B1CF9CAD70057C365 /* TCRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRootWireframe.h; sourceTree = "<group>"; wrapsLines = 0; };
+		D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRootWireframe.m; sourceTree = "<group>"; };
+		D5EEC68F1CF9D9080057C365 /* TCBillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBillTableViewCell.h; sourceTree = "<group>"; };
+		D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBillTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
+		D5EEC6921CF9D9210057C365 /* TCTipTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTipTableViewCell.h; sourceTree = "<group>"; };
+		D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTipTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
+		D5EEC6951CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNumberOfPeopleTableViewCell.h; sourceTree = "<group>"; };
+		D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNumberOfPeopleTableViewCell.m; sourceTree = "<group>"; };
+		D5EEC6981CF9D96D0057C365 /* TCResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResultTableViewCell.h; sourceTree = "<group>"; };
+		D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResultTableViewCell.m; sourceTree = "<group>"; };
+		D5EEC69D1CF9DF560057C365 /* ANStepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANStepperView.h; sourceTree = "<group>"; };
+		D5EEC69E1CF9DF560057C365 /* ANStepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANStepperView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +141,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D5BBD3701D4C8595003E464C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D5BBD3711D4C85F4003E464C /* TipCalculatorKeys.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D5BF7CCB1CE9C2E000B87908 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,19 +169,12 @@
 		D5BF7CD01CE9C2E000B87908 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D5BF7CD11CE9C2E000B87908 /* DataModel */,
+				D5C25F141CF8544E001E5F9B /* Main.storyboard */,
 				D5BF7CD21CE9C2E000B87908 /* Fonts */,
 				D5BF7CD31CE9C2E000B87908 /* Images */,
 				D5BF7CD51CE9C2E000B87908 /* Videos */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		D5BF7CD11CE9C2E000B87908 /* DataModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataModel;
 			sourceTree = "<group>";
 		};
 		D5BF7CD21CE9C2E000B87908 /* Fonts */ = {
@@ -163,6 +187,7 @@
 		D5BF7CD31CE9C2E000B87908 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */,
 				D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */,
 			);
 			path = Images;
@@ -178,8 +203,12 @@
 		D5BF7CD61CE9C2E000B87908 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D5BBD3701D4C8595003E464C /* Common */,
+				D5EEC69B1CF9DF560057C365 /* Vendor */,
+				D5EEC6851CF9C9980057C365 /* Categories */,
+				D5EEC6861CF9C9980057C365 /* CoreData */,
+				D5EEC6881CF9C9980057C365 /* Model */,
 				D5BF7CD71CE9C2E000B87908 /* Controller */,
-				D5BF7CD81CE9C2E000B87908 /* Vendor */,
 				D5BF7CD91CE9C2E000B87908 /* Views */,
 			);
 			path = Shared;
@@ -193,16 +222,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D5BF7CD81CE9C2E000B87908 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
 		D5BF7CD91CE9C2E000B87908 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D5EEC68B1CF9CAD70057C365 /* TCRootWireframe.h */,
+				D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +311,7 @@
 		D5BF7D011CE9C95200B87908 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D5EEC68E1CF9D8EE0057C365 /* Cells */,
 				D5BF7D021CE9C95200B87908 /* TipCalculatorView.h */,
 				D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */,
 			);
@@ -353,6 +378,67 @@
 				D5E755D21CE47E0F00E74FD4 /* Info.plist */,
 			);
 			path = TipCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		D5EEC6851CF9C9980057C365 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D5EEC6861CF9C9980057C365 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D5EEC6871CF9C9980057C365 /* Entities */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D5EEC6871CF9C9980057C365 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		D5EEC6881CF9C9980057C365 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5EEC68E1CF9D8EE0057C365 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5EEC68F1CF9D9080057C365 /* TCBillTableViewCell.h */,
+				D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */,
+				D5EEC6921CF9D9210057C365 /* TCTipTableViewCell.h */,
+				D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */,
+				D5EEC6951CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.h */,
+				D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */,
+				D5EEC6981CF9D96D0057C365 /* TCResultTableViewCell.h */,
+				D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D5EEC69B1CF9DF560057C365 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				D5EEC69C1CF9DF560057C365 /* ANStepperView */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		D5EEC69C1CF9DF560057C365 /* ANStepperView */ = {
+			isa = PBXGroup;
+			children = (
+				D5EEC69D1CF9DF560057C365 /* ANStepperView.h */,
+				D5EEC69E1CF9DF560057C365 /* ANStepperView.m */,
+			);
+			path = ANStepperView;
 			sourceTree = "<group>";
 		};
 		EAFD3CB0FA32F82A3898112F /* Frameworks */ = {
@@ -433,6 +519,7 @@
 				TargetAttributes = {
 					D5E755A71CE47E0E00E74FD4 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 495XWEJ924;
 					};
 					D5E755C01CE47E0F00E74FD4 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -470,8 +557,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5BF7CE41CE9C2E000B87908 /* Assets.xcassets in Resources */,
+				D5C25F151CF8544E001E5F9B /* Main.storyboard in Resources */,
 				D5BF7CEE1CE9C34300B87908 /* Default-568h@2x.png in Resources */,
 				D5BF7CE71CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */,
+				D5BBD3731D4CC2A7003E464C /* splash_logo@2x.png in Resources */,
 				D5BF7CEA1CE9C2E000B87908 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,14 +640,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5EEC69F1CF9DF560057C365 /* ANStepperView.m in Sources */,
 				D5BF7D0C1CE9C95200B87908 /* TipCalculatorView.m in Sources */,
 				D5BF7D071CE9C95200B87908 /* TipCalculatorAPIDataManager.m in Sources */,
 				D5BF7D081CE9C95200B87908 /* TipCalculatorLocalDataManager.m in Sources */,
 				D5BF7D0A1CE9C95200B87908 /* TipCalculatorItem.m in Sources */,
 				D5BF7D0B1CE9C95200B87908 /* TipCalculatorPresenter.m in Sources */,
+				D5EEC69A1CF9D96D0057C365 /* TCResultTableViewCell.m in Sources */,
 				D5BF7CE11CE9C2E000B87908 /* main.m in Sources */,
 				D5BF7D0D1CE9C95200B87908 /* TipCalculatorWireFrame.m in Sources */,
+				D5EEC68D1CF9CAD70057C365 /* TCRootWireframe.m in Sources */,
+				D5EEC6911CF9D9080057C365 /* TCBillTableViewCell.m in Sources */,
 				D5BF7D091CE9C95200B87908 /* TipCalculatorInteractor.m in Sources */,
+				D5EEC6971CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m in Sources */,
+				D5EEC6941CF9D9210057C365 /* TCTipTableViewCell.m in Sources */,
 				D5BF7CDE1CE9C2E000B87908 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -691,6 +786,7 @@
 			baseConfigurationReference = 945C3D8BB3EB35A2E174829B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tirupati Balan (495XWEJ924)";
 				INFOPLIST_FILE = "TipCalculator/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -704,6 +800,7 @@
 			baseConfigurationReference = ABD94C536D95F3ABE3342412 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Tirupati Balan (495XWEJ924)";
 				INFOPLIST_FILE = "TipCalculator/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

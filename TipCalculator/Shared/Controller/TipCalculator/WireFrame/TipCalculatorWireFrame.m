@@ -4,10 +4,11 @@
 //
 
 #import "TipCalculatorWireFrame.h"
+#import "TCRootWireframe.h"
 
 @implementation TipCalculatorWireFrame
 
-+ (void)presentTipCalculatorModuleFrom:(UIViewController*)fromViewController
++ (void)presentTipCalculatorModuleFrom:(UIWindow *)window;
 {
     // Generating module components
     id <TipCalculatorViewProtocol> view = [[TipCalculatorView alloc] init];
@@ -16,6 +17,7 @@
     id <TipCalculatorAPIDataManagerInputProtocol> APIDataManager = [TipCalculatorAPIDataManager new];
     id <TipCalculatorLocalDataManagerInputProtocol> localDataManager = [TipCalculatorLocalDataManager new];
     id <TipCalculatorWireFrameProtocol> wireFrame= [TipCalculatorWireFrame new];
+    TCRootWireframe *rootWireframe = [[TCRootWireframe alloc] init];
     
     // Connecting
     view.presenter = presenter;
@@ -26,7 +28,7 @@
     interactor.APIDataManager = APIDataManager;
     interactor.localDataManager = localDataManager;
     
-    //TOODO - New view controller presentation (present, push, pop, .. )
+    [rootWireframe showRootViewController:(UIViewController *)view inWindow:window];
 }
 
 @end

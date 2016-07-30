@@ -22,6 +22,8 @@
 /**
  * Add here your methods for communication PRESENTER -> VIEWCONTROLLER
  */
+- (void)applyCalculationWithData:(NSDictionary *)data;
+
 @end
 
 @protocol TipCalculatorWireFrameProtocol
@@ -40,12 +42,15 @@
 /**
  * Add here your methods for communication VIEWCONTROLLER -> PRESENTER
  */
+- (void)calculateTipWithData:(NSDictionary *)item;
+
 @end
 
 @protocol TipCalculatorInteractorOutputProtocol
 /**
  * Add here your methods for communication INTERACTOR -> PRESENTER
  */
+
 @end
 
 @protocol TipCalculatorInteractorInputProtocol
@@ -56,6 +61,8 @@
 /**
  * Add here your methods for communication PRESENTER -> INTERACTOR
  */
+- (NSDictionary *)saveAndReturnCalculatedTip:(NSDictionary *)item;
+
 @end
 
 
