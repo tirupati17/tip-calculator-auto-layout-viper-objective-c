@@ -1,902 +1,2147 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		159EE0E2619E9CA1C97CFD9B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC96F0E04AEF47A35D2240A5 /* libPods.a */; };
-		D5BBD3731D4CC2A7003E464C /* splash_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */; };
-		D5BF7CDE1CE9C2E000B87908 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CCD1CE9C2E000B87908 /* AppDelegate.m */; };
-		D5BF7CE11CE9C2E000B87908 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CCE1CE9C2E000B87908 /* main.m */; };
-		D5BF7CE41CE9C2E000B87908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */; };
-		D5BF7CE51CE9C2E000B87908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */; };
-		D5BF7CE61CE9C2E000B87908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */; };
-		D5BF7CE71CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDB1CE9C2E000B87908 /* LaunchScreen.storyboard */; };
-		D5BF7CE81CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDB1CE9C2E000B87908 /* LaunchScreen.storyboard */; };
-		D5BF7CE91CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDB1CE9C2E000B87908 /* LaunchScreen.storyboard */; };
-		D5BF7CEA1CE9C2E000B87908 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDD1CE9C2E000B87908 /* Info.plist */; };
-		D5BF7CEB1CE9C2E000B87908 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDD1CE9C2E000B87908 /* Info.plist */; };
-		D5BF7CEC1CE9C2E000B87908 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CDD1CE9C2E000B87908 /* Info.plist */; };
-		D5BF7CEE1CE9C34300B87908 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5BF7CED1CE9C34300B87908 /* Default-568h@2x.png */; };
-		D5BF7D071CE9C95200B87908 /* TipCalculatorAPIDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CF31CE9C95200B87908 /* TipCalculatorAPIDataManager.m */; };
-		D5BF7D081CE9C95200B87908 /* TipCalculatorLocalDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CF61CE9C95200B87908 /* TipCalculatorLocalDataManager.m */; };
-		D5BF7D091CE9C95200B87908 /* TipCalculatorInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CF91CE9C95200B87908 /* TipCalculatorInteractor.m */; };
-		D5BF7D0A1CE9C95200B87908 /* TipCalculatorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CFB1CE9C95200B87908 /* TipCalculatorItem.m */; };
-		D5BF7D0B1CE9C95200B87908 /* TipCalculatorPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7CFE1CE9C95200B87908 /* TipCalculatorPresenter.m */; };
-		D5BF7D0C1CE9C95200B87908 /* TipCalculatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */; };
-		D5BF7D0D1CE9C95200B87908 /* TipCalculatorWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BF7D061CE9C95200B87908 /* TipCalculatorWireFrame.m */; };
-		D5C25F151CF8544E001E5F9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C25F141CF8544E001E5F9B /* Main.storyboard */; };
-		D5E755C61CE47E0F00E74FD4 /* TipCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E755C51CE47E0F00E74FD4 /* TipCalculatorTests.m */; };
-		D5E755D11CE47E0F00E74FD4 /* TipCalculatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E755D01CE47E0F00E74FD4 /* TipCalculatorUITests.m */; };
-		D5EEC68D1CF9CAD70057C365 /* TCRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */; };
-		D5EEC6911CF9D9080057C365 /* TCBillTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */; };
-		D5EEC6941CF9D9210057C365 /* TCTipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */; };
-		D5EEC6971CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */; };
-		D5EEC69A1CF9D96D0057C365 /* TCResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */; };
-		D5EEC69F1CF9DF560057C365 /* ANStepperView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EEC69E1CF9DF560057C365 /* ANStepperView.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D5E755C21CE47E0F00E74FD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5E755A01CE47E0E00E74FD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5E755A71CE47E0E00E74FD4;
-			remoteInfo = TipCalculator;
-		};
-		D5E755CD1CE47E0F00E74FD4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5E755A01CE47E0E00E74FD4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5E755A71CE47E0E00E74FD4;
-			remoteInfo = TipCalculator;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		945C3D8BB3EB35A2E174829B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		ABD94C536D95F3ABE3342412 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		AC96F0E04AEF47A35D2240A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5BBD3711D4C85F4003E464C /* TipCalculatorKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipCalculatorKeys.h; sourceTree = "<group>"; };
-		D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash_logo@2x.png"; sourceTree = "<group>"; };
-		D5BF7CCC1CE9C2E000B87908 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D5BF7CCD1CE9C2E000B87908 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D5BF7CCE1CE9C2E000B87908 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5BF7CDC1CE9C2E000B87908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D5BF7CDD1CE9C2E000B87908 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5BF7CED1CE9C34300B87908 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		D5BF7CF21CE9C95200B87908 /* TipCalculatorAPIDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorAPIDataManager.h; sourceTree = "<group>"; };
-		D5BF7CF31CE9C95200B87908 /* TipCalculatorAPIDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorAPIDataManager.m; sourceTree = "<group>"; };
-		D5BF7CF51CE9C95200B87908 /* TipCalculatorLocalDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorLocalDataManager.h; sourceTree = "<group>"; };
-		D5BF7CF61CE9C95200B87908 /* TipCalculatorLocalDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorLocalDataManager.m; sourceTree = "<group>"; };
-		D5BF7CF81CE9C95200B87908 /* TipCalculatorInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorInteractor.h; sourceTree = "<group>"; };
-		D5BF7CF91CE9C95200B87908 /* TipCalculatorInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorInteractor.m; sourceTree = "<group>"; };
-		D5BF7CFA1CE9C95200B87908 /* TipCalculatorItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorItem.h; sourceTree = "<group>"; };
-		D5BF7CFB1CE9C95200B87908 /* TipCalculatorItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorItem.m; sourceTree = "<group>"; };
-		D5BF7CFD1CE9C95200B87908 /* TipCalculatorPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorPresenter.h; sourceTree = "<group>"; };
-		D5BF7CFE1CE9C95200B87908 /* TipCalculatorPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorPresenter.m; sourceTree = "<group>"; };
-		D5BF7D001CE9C95200B87908 /* TipCalculatorProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorProtocols.h; sourceTree = "<group>"; };
-		D5BF7D021CE9C95200B87908 /* TipCalculatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorView.h; sourceTree = "<group>"; };
-		D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorView.m; sourceTree = "<group>"; wrapsLines = 0; };
-		D5BF7D051CE9C95200B87908 /* TipCalculatorWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalculatorWireFrame.h; sourceTree = "<group>"; };
-		D5BF7D061CE9C95200B87908 /* TipCalculatorWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorWireFrame.m; sourceTree = "<group>"; };
-		D5C25F141CF8544E001E5F9B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D5E755A81CE47E0E00E74FD4 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5E755C11CE47E0F00E74FD4 /* TipCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5E755C51CE47E0F00E74FD4 /* TipCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorTests.m; sourceTree = "<group>"; };
-		D5E755C71CE47E0F00E74FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5E755CC1CE47E0F00E74FD4 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5E755D01CE47E0F00E74FD4 /* TipCalculatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipCalculatorUITests.m; sourceTree = "<group>"; };
-		D5E755D21CE47E0F00E74FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5EEC68B1CF9CAD70057C365 /* TCRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRootWireframe.h; sourceTree = "<group>"; wrapsLines = 0; };
-		D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRootWireframe.m; sourceTree = "<group>"; };
-		D5EEC68F1CF9D9080057C365 /* TCBillTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBillTableViewCell.h; sourceTree = "<group>"; };
-		D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBillTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
-		D5EEC6921CF9D9210057C365 /* TCTipTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTipTableViewCell.h; sourceTree = "<group>"; };
-		D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTipTableViewCell.m; sourceTree = "<group>"; wrapsLines = 0; };
-		D5EEC6951CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCNumberOfPeopleTableViewCell.h; sourceTree = "<group>"; };
-		D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCNumberOfPeopleTableViewCell.m; sourceTree = "<group>"; };
-		D5EEC6981CF9D96D0057C365 /* TCResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResultTableViewCell.h; sourceTree = "<group>"; };
-		D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResultTableViewCell.m; sourceTree = "<group>"; };
-		D5EEC69D1CF9DF560057C365 /* ANStepperView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANStepperView.h; sourceTree = "<group>"; };
-		D5EEC69E1CF9DF560057C365 /* ANStepperView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANStepperView.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		D5E755A51CE47E0E00E74FD4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				159EE0E2619E9CA1C97CFD9B /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755BE1CE47E0F00E74FD4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755C91CE47E0F00E74FD4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		23F42956079DF42D3C864D27 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				945C3D8BB3EB35A2E174829B /* Pods.debug.xcconfig */,
-				ABD94C536D95F3ABE3342412 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D5BBD3701D4C8595003E464C /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				D5BBD3711D4C85F4003E464C /* TipCalculatorKeys.h */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		D5BF7CCB1CE9C2E000B87908 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CCC1CE9C2E000B87908 /* AppDelegate.h */,
-				D5BF7CCD1CE9C2E000B87908 /* AppDelegate.m */,
-				D5BF7CCE1CE9C2E000B87908 /* main.m */,
-			);
-			path = Application;
-			sourceTree = "<group>";
-		};
-		D5BF7CCF1CE9C2E000B87908 /* Libraries */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Libraries;
-			sourceTree = "<group>";
-		};
-		D5BF7CD01CE9C2E000B87908 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D5C25F141CF8544E001E5F9B /* Main.storyboard */,
-				D5BF7CD21CE9C2E000B87908 /* Fonts */,
-				D5BF7CD31CE9C2E000B87908 /* Images */,
-				D5BF7CD51CE9C2E000B87908 /* Videos */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		D5BF7CD21CE9C2E000B87908 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Fonts;
-			sourceTree = "<group>";
-		};
-		D5BF7CD31CE9C2E000B87908 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				D5BBD3721D4CC2A7003E464C /* splash_logo@2x.png */,
-				D5BF7CD41CE9C2E000B87908 /* Assets.xcassets */,
-			);
-			path = Images;
-			sourceTree = "<group>";
-		};
-		D5BF7CD51CE9C2E000B87908 /* Videos */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Videos;
-			sourceTree = "<group>";
-		};
-		D5BF7CD61CE9C2E000B87908 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				D5BBD3701D4C8595003E464C /* Common */,
-				D5EEC69B1CF9DF560057C365 /* Vendor */,
-				D5EEC6851CF9C9980057C365 /* Categories */,
-				D5EEC6861CF9C9980057C365 /* CoreData */,
-				D5EEC6881CF9C9980057C365 /* Model */,
-				D5BF7CD71CE9C2E000B87908 /* Controller */,
-				D5BF7CD91CE9C2E000B87908 /* Views */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		D5BF7CD71CE9C2E000B87908 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CEF1CE9C95200B87908 /* TipCalculator */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		D5BF7CD91CE9C2E000B87908 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC68B1CF9CAD70057C365 /* TCRootWireframe.h */,
-				D5EEC68C1CF9CAD70057C365 /* TCRootWireframe.m */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		D5BF7CDA1CE9C2E000B87908 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CDB1CE9C2E000B87908 /* LaunchScreen.storyboard */,
-				D5BF7CDD1CE9C2E000B87908 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D5BF7CEF1CE9C95200B87908 /* TipCalculator */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CF01CE9C95200B87908 /* DataManager */,
-				D5BF7CF71CE9C95200B87908 /* Interactor */,
-				D5BF7CFC1CE9C95200B87908 /* Presenter */,
-				D5BF7CFF1CE9C95200B87908 /* Protocols */,
-				D5BF7D011CE9C95200B87908 /* View */,
-				D5BF7D041CE9C95200B87908 /* WireFrame */,
-			);
-			path = TipCalculator;
-			sourceTree = "<group>";
-		};
-		D5BF7CF01CE9C95200B87908 /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CF11CE9C95200B87908 /* API */,
-				D5BF7CF41CE9C95200B87908 /* Local */,
-			);
-			path = DataManager;
-			sourceTree = "<group>";
-		};
-		D5BF7CF11CE9C95200B87908 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CF21CE9C95200B87908 /* TipCalculatorAPIDataManager.h */,
-				D5BF7CF31CE9C95200B87908 /* TipCalculatorAPIDataManager.m */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		D5BF7CF41CE9C95200B87908 /* Local */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CF51CE9C95200B87908 /* TipCalculatorLocalDataManager.h */,
-				D5BF7CF61CE9C95200B87908 /* TipCalculatorLocalDataManager.m */,
-			);
-			path = Local;
-			sourceTree = "<group>";
-		};
-		D5BF7CF71CE9C95200B87908 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CF81CE9C95200B87908 /* TipCalculatorInteractor.h */,
-				D5BF7CF91CE9C95200B87908 /* TipCalculatorInteractor.m */,
-				D5BF7CFA1CE9C95200B87908 /* TipCalculatorItem.h */,
-				D5BF7CFB1CE9C95200B87908 /* TipCalculatorItem.m */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		D5BF7CFC1CE9C95200B87908 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CFD1CE9C95200B87908 /* TipCalculatorPresenter.h */,
-				D5BF7CFE1CE9C95200B87908 /* TipCalculatorPresenter.m */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		D5BF7CFF1CE9C95200B87908 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7D001CE9C95200B87908 /* TipCalculatorProtocols.h */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		D5BF7D011CE9C95200B87908 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC68E1CF9D8EE0057C365 /* Cells */,
-				D5BF7D021CE9C95200B87908 /* TipCalculatorView.h */,
-				D5BF7D031CE9C95200B87908 /* TipCalculatorView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D5BF7D041CE9C95200B87908 /* WireFrame */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7D051CE9C95200B87908 /* TipCalculatorWireFrame.h */,
-				D5BF7D061CE9C95200B87908 /* TipCalculatorWireFrame.m */,
-			);
-			path = WireFrame;
-			sourceTree = "<group>";
-		};
-		D5E7559F1CE47E0E00E74FD4 = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CED1CE9C34300B87908 /* Default-568h@2x.png */,
-				D5E755AA1CE47E0E00E74FD4 /* TipCalculator */,
-				D5E755C41CE47E0F00E74FD4 /* TipCalculatorTests */,
-				D5E755CF1CE47E0F00E74FD4 /* TipCalculatorUITests */,
-				D5E755A91CE47E0E00E74FD4 /* Products */,
-				23F42956079DF42D3C864D27 /* Pods */,
-				EAFD3CB0FA32F82A3898112F /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		D5E755A91CE47E0E00E74FD4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D5E755A81CE47E0E00E74FD4 /* TipCalculator.app */,
-				D5E755C11CE47E0F00E74FD4 /* TipCalculatorTests.xctest */,
-				D5E755CC1CE47E0F00E74FD4 /* TipCalculatorUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D5E755AA1CE47E0E00E74FD4 /* TipCalculator */ = {
-			isa = PBXGroup;
-			children = (
-				D5BF7CCB1CE9C2E000B87908 /* Application */,
-				D5BF7CCF1CE9C2E000B87908 /* Libraries */,
-				D5BF7CD01CE9C2E000B87908 /* Resources */,
-				D5BF7CD61CE9C2E000B87908 /* Shared */,
-				D5BF7CDA1CE9C2E000B87908 /* Supporting Files */,
-			);
-			path = TipCalculator;
-			sourceTree = "<group>";
-		};
-		D5E755C41CE47E0F00E74FD4 /* TipCalculatorTests */ = {
-			isa = PBXGroup;
-			children = (
-				D5E755C51CE47E0F00E74FD4 /* TipCalculatorTests.m */,
-				D5E755C71CE47E0F00E74FD4 /* Info.plist */,
-			);
-			path = TipCalculatorTests;
-			sourceTree = "<group>";
-		};
-		D5E755CF1CE47E0F00E74FD4 /* TipCalculatorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D5E755D01CE47E0F00E74FD4 /* TipCalculatorUITests.m */,
-				D5E755D21CE47E0F00E74FD4 /* Info.plist */,
-			);
-			path = TipCalculatorUITests;
-			sourceTree = "<group>";
-		};
-		D5EEC6851CF9C9980057C365 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		D5EEC6861CF9C9980057C365 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC6871CF9C9980057C365 /* Entities */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		D5EEC6871CF9C9980057C365 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		D5EEC6881CF9C9980057C365 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D5EEC68E1CF9D8EE0057C365 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC68F1CF9D9080057C365 /* TCBillTableViewCell.h */,
-				D5EEC6901CF9D9080057C365 /* TCBillTableViewCell.m */,
-				D5EEC6921CF9D9210057C365 /* TCTipTableViewCell.h */,
-				D5EEC6931CF9D9210057C365 /* TCTipTableViewCell.m */,
-				D5EEC6951CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.h */,
-				D5EEC6961CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m */,
-				D5EEC6981CF9D96D0057C365 /* TCResultTableViewCell.h */,
-				D5EEC6991CF9D96D0057C365 /* TCResultTableViewCell.m */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		D5EEC69B1CF9DF560057C365 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC69C1CF9DF560057C365 /* ANStepperView */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		D5EEC69C1CF9DF560057C365 /* ANStepperView */ = {
-			isa = PBXGroup;
-			children = (
-				D5EEC69D1CF9DF560057C365 /* ANStepperView.h */,
-				D5EEC69E1CF9DF560057C365 /* ANStepperView.m */,
-			);
-			path = ANStepperView;
-			sourceTree = "<group>";
-		};
-		EAFD3CB0FA32F82A3898112F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AC96F0E04AEF47A35D2240A5 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		D5E755A71CE47E0E00E74FD4 /* TipCalculator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5E755D51CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculator" */;
-			buildPhases = (
-				B41C5731154FF04889D54951 /* Check Pods Manifest.lock */,
-				D5E755A41CE47E0E00E74FD4 /* Sources */,
-				D5E755A51CE47E0E00E74FD4 /* Frameworks */,
-				D5E755A61CE47E0E00E74FD4 /* Resources */,
-				9321621E589AB4716DCB8316 /* Embed Pods Frameworks */,
-				F06459E91C8547E4EAF449D2 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TipCalculator;
-			productName = TipCalculator;
-			productReference = D5E755A81CE47E0E00E74FD4 /* TipCalculator.app */;
-			productType = "com.apple.product-type.application";
-		};
-		D5E755C01CE47E0F00E74FD4 /* TipCalculatorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5E755D81CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */;
-			buildPhases = (
-				D5E755BD1CE47E0F00E74FD4 /* Sources */,
-				D5E755BE1CE47E0F00E74FD4 /* Frameworks */,
-				D5E755BF1CE47E0F00E74FD4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5E755C31CE47E0F00E74FD4 /* PBXTargetDependency */,
-			);
-			name = TipCalculatorTests;
-			productName = TipCalculatorTests;
-			productReference = D5E755C11CE47E0F00E74FD4 /* TipCalculatorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		D5E755CB1CE47E0F00E74FD4 /* TipCalculatorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5E755DB1CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */;
-			buildPhases = (
-				D5E755C81CE47E0F00E74FD4 /* Sources */,
-				D5E755C91CE47E0F00E74FD4 /* Frameworks */,
-				D5E755CA1CE47E0F00E74FD4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5E755CE1CE47E0F00E74FD4 /* PBXTargetDependency */,
-			);
-			name = TipCalculatorUITests;
-			productName = TipCalculatorUITests;
-			productReference = D5E755CC1CE47E0F00E74FD4 /* TipCalculatorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D5E755A01CE47E0E00E74FD4 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = CelerStudio;
-				TargetAttributes = {
-					D5E755A71CE47E0E00E74FD4 = {
-						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 495XWEJ924;
-					};
-					D5E755C01CE47E0F00E74FD4 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = D5E755A71CE47E0E00E74FD4;
-					};
-					D5E755CB1CE47E0F00E74FD4 = {
-						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = D5E755A71CE47E0E00E74FD4;
-					};
-				};
-			};
-			buildConfigurationList = D5E755A31CE47E0E00E74FD4 /* Build configuration list for PBXProject "TipCalculator" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = D5E7559F1CE47E0E00E74FD4;
-			productRefGroup = D5E755A91CE47E0E00E74FD4 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				D5E755A71CE47E0E00E74FD4 /* TipCalculator */,
-				D5E755C01CE47E0F00E74FD4 /* TipCalculatorTests */,
-				D5E755CB1CE47E0F00E74FD4 /* TipCalculatorUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D5E755A61CE47E0E00E74FD4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5BF7CE41CE9C2E000B87908 /* Assets.xcassets in Resources */,
-				D5C25F151CF8544E001E5F9B /* Main.storyboard in Resources */,
-				D5BF7CEE1CE9C34300B87908 /* Default-568h@2x.png in Resources */,
-				D5BF7CE71CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */,
-				D5BBD3731D4CC2A7003E464C /* splash_logo@2x.png in Resources */,
-				D5BF7CEA1CE9C2E000B87908 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755BF1CE47E0F00E74FD4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5BF7CE51CE9C2E000B87908 /* Assets.xcassets in Resources */,
-				D5BF7CE81CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */,
-				D5BF7CEB1CE9C2E000B87908 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755CA1CE47E0F00E74FD4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5BF7CE61CE9C2E000B87908 /* Assets.xcassets in Resources */,
-				D5BF7CE91CE9C2E000B87908 /* LaunchScreen.storyboard in Resources */,
-				D5BF7CEC1CE9C2E000B87908 /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		9321621E589AB4716DCB8316 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B41C5731154FF04889D54951 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F06459E91C8547E4EAF449D2 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		D5E755A41CE47E0E00E74FD4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5EEC69F1CF9DF560057C365 /* ANStepperView.m in Sources */,
-				D5BF7D0C1CE9C95200B87908 /* TipCalculatorView.m in Sources */,
-				D5BF7D071CE9C95200B87908 /* TipCalculatorAPIDataManager.m in Sources */,
-				D5BF7D081CE9C95200B87908 /* TipCalculatorLocalDataManager.m in Sources */,
-				D5BF7D0A1CE9C95200B87908 /* TipCalculatorItem.m in Sources */,
-				D5BF7D0B1CE9C95200B87908 /* TipCalculatorPresenter.m in Sources */,
-				D5EEC69A1CF9D96D0057C365 /* TCResultTableViewCell.m in Sources */,
-				D5BF7CE11CE9C2E000B87908 /* main.m in Sources */,
-				D5BF7D0D1CE9C95200B87908 /* TipCalculatorWireFrame.m in Sources */,
-				D5EEC68D1CF9CAD70057C365 /* TCRootWireframe.m in Sources */,
-				D5EEC6911CF9D9080057C365 /* TCBillTableViewCell.m in Sources */,
-				D5BF7D091CE9C95200B87908 /* TipCalculatorInteractor.m in Sources */,
-				D5EEC6971CF9D9460057C365 /* TCNumberOfPeopleTableViewCell.m in Sources */,
-				D5EEC6941CF9D9210057C365 /* TCTipTableViewCell.m in Sources */,
-				D5BF7CDE1CE9C2E000B87908 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755BD1CE47E0F00E74FD4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5E755C61CE47E0F00E74FD4 /* TipCalculatorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5E755C81CE47E0F00E74FD4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5E755D11CE47E0F00E74FD4 /* TipCalculatorUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D5E755C31CE47E0F00E74FD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5E755A71CE47E0E00E74FD4 /* TipCalculator */;
-			targetProxy = D5E755C21CE47E0F00E74FD4 /* PBXContainerItemProxy */;
-		};
-		D5E755CE1CE47E0F00E74FD4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5E755A71CE47E0E00E74FD4 /* TipCalculator */;
-			targetProxy = D5E755CD1CE47E0F00E74FD4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		D5BF7CDB1CE9C2E000B87908 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D5BF7CDC1CE9C2E000B87908 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		D5E755D31CE47E0F00E74FD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		D5E755D41CE47E0F00E74FD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		D5E755D61CE47E0F00E74FD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 945C3D8BB3EB35A2E174829B /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tirupati Balan (495XWEJ924)";
-				INFOPLIST_FILE = "TipCalculator/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		D5E755D71CE47E0F00E74FD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABD94C536D95F3ABE3342412 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Tirupati Balan (495XWEJ924)";
-				INFOPLIST_FILE = "TipCalculator/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D5E755D91CE47E0F00E74FD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TipCalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/TipCalculator";
-			};
-			name = Debug;
-		};
-		D5E755DA1CE47E0F00E74FD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TipCalculatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculatorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipCalculator.app/TipCalculator";
-			};
-			name = Release;
-		};
-		D5E755DC1CE47E0F00E74FD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TipCalculatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TipCalculator;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		D5E755DD1CE47E0F00E74FD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TipCalculatorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.celerstudio.TipCalculatorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TipCalculator;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		D5E755A31CE47E0E00E74FD4 /* Build configuration list for PBXProject "TipCalculator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5E755D31CE47E0F00E74FD4 /* Debug */,
-				D5E755D41CE47E0F00E74FD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5E755D51CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5E755D61CE47E0F00E74FD4 /* Debug */,
-				D5E755D71CE47E0F00E74FD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5E755D81CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculatorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5E755D91CE47E0F00E74FD4 /* Debug */,
-				D5E755DA1CE47E0F00E74FD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5E755DB1CE47E0F00E74FD4 /* Build configuration list for PBXNativeTarget "TipCalculatorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5E755DC1CE47E0F00E74FD4 /* Debug */,
-				D5E755DD1CE47E0F00E74FD4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D5E755A01CE47E0E00E74FD4 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>159EE0E2619E9CA1C97CFD9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AC96F0E04AEF47A35D2240A5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1615E93E335EB82EDE3766A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TipCalculator.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TipCalculator/Pods-TipCalculator.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23F42956079DF42D3C864D27</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>945C3D8BB3EB35A2E174829B</string>
+				<string>ABD94C536D95F3ABE3342412</string>
+				<string>1615E93E335EB82EDE3766A7</string>
+				<string>C274AC7B004D9FC699FA7C80</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>68705384DBF7B1DED384630F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TipCalculator.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9321621E589AB4716DCB8316</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TipCalculator/Pods-TipCalculator-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>945C3D8BB3EB35A2E174829B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ABD94C536D95F3ABE3342412</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC96F0E04AEF47A35D2240A5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B41C5731154FF04889D54951</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C274AC7B004D9FC699FA7C80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TipCalculator.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TipCalculator/Pods-TipCalculator.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BBD3701D4C8595003E464C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BBD3711D4C85F4003E464C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Common</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BBD3711D4C85F4003E464C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorKeys.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BBD3721D4CC2A7003E464C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>splash_logo@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BBD3731D4CC2A7003E464C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BBD3721D4CC2A7003E464C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CCB1CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CCC1CE9C2E000B87908</string>
+				<string>D5BF7CCD1CE9C2E000B87908</string>
+				<string>D5BF7CCE1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Application</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CCC1CE9C2E000B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CCD1CE9C2E000B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CCE1CE9C2E000B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CCF1CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Libraries</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD01CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5C25F141CF8544E001E5F9B</string>
+				<string>D5BF7CD21CE9C2E000B87908</string>
+				<string>D5BF7CD31CE9C2E000B87908</string>
+				<string>D5BF7CD51CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD21CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Fonts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD31CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BBD3721D4CC2A7003E464C</string>
+				<string>D5BF7CD41CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Images</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD41CE9C2E000B87908</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD51CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Videos</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD61CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BBD3701D4C8595003E464C</string>
+				<string>D5EEC69B1CF9DF560057C365</string>
+				<string>D5EEC6851CF9C9980057C365</string>
+				<string>D5EEC6861CF9C9980057C365</string>
+				<string>D5EEC6881CF9C9980057C365</string>
+				<string>D5BF7CD71CE9C2E000B87908</string>
+				<string>D5BF7CD91CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Shared</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD71CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CEF1CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Controller</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CD91CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC68B1CF9CAD70057C365</string>
+				<string>D5EEC68C1CF9CAD70057C365</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CDA1CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CDB1CE9C2E000B87908</string>
+				<string>D5BF7CDD1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CDB1CE9C2E000B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CDC1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CDC1CE9C2E000B87908</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CDD1CE9C2E000B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CDE1CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CCD1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE11CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CCE1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE41CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CD41CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE51CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CD41CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE61CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CD41CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE71CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDB1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE81CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDB1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CE91CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDB1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CEA1CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDD1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CEB1CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDD1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CEC1CE9C2E000B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CDD1CE9C2E000B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CED1CE9C34300B87908</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CEE1CE9C34300B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CED1CE9C34300B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7CEF1CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CF01CE9C95200B87908</string>
+				<string>D5BF7CF71CE9C95200B87908</string>
+				<string>D5BF7CFC1CE9C95200B87908</string>
+				<string>D5BF7CFF1CE9C95200B87908</string>
+				<string>D5BF7D011CE9C95200B87908</string>
+				<string>D5BF7D041CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TipCalculator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF01CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CF11CE9C95200B87908</string>
+				<string>D5BF7CF41CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>DataManager</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF11CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CF21CE9C95200B87908</string>
+				<string>D5BF7CF31CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>API</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF21CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorAPIDataManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF31CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorAPIDataManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF41CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CF51CE9C95200B87908</string>
+				<string>D5BF7CF61CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Local</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF51CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorLocalDataManager.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF61CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorLocalDataManager.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF71CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CF81CE9C95200B87908</string>
+				<string>D5BF7CF91CE9C95200B87908</string>
+				<string>D5BF7CFA1CE9C95200B87908</string>
+				<string>D5BF7CFB1CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Interactor</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF81CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorInteractor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CF91CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorInteractor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFA1CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorItem.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFB1CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorItem.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFC1CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CFD1CE9C95200B87908</string>
+				<string>D5BF7CFE1CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Presenter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFD1CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorPresenter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFE1CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorPresenter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7CFF1CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7D001CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Protocols</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D001CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorProtocols.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D011CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC68E1CF9D8EE0057C365</string>
+				<string>D5BF7D021CE9C95200B87908</string>
+				<string>D5BF7D031CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D021CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D031CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>wrapsLines</key>
+			<string>0</string>
+		</dict>
+		<key>D5BF7D041CE9C95200B87908</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7D051CE9C95200B87908</string>
+				<string>D5BF7D061CE9C95200B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WireFrame</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D051CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TipCalculatorWireFrame.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D061CE9C95200B87908</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorWireFrame.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5BF7D071CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CF31CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D081CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CF61CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D091CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CF91CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D0A1CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CFB1CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D0B1CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7CFE1CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D0C1CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7D031CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5BF7D0D1CE9C95200B87908</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5BF7D061CE9C95200B87908</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5C25F141CF8544E001E5F9B</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5C25F151CF8544E001E5F9B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5C25F141CF8544E001E5F9B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5E7559F1CE47E0E00E74FD4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CED1CE9C34300B87908</string>
+				<string>D5E755AA1CE47E0E00E74FD4</string>
+				<string>D5E755C41CE47E0F00E74FD4</string>
+				<string>D5E755CF1CE47E0F00E74FD4</string>
+				<string>D5E755A91CE47E0E00E74FD4</string>
+				<string>23F42956079DF42D3C864D27</string>
+				<string>EAFD3CB0FA32F82A3898112F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755A01CE47E0E00E74FD4</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0720</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>CelerStudio</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>D5E755A71CE47E0E00E74FD4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+						<key>DevelopmentTeam</key>
+						<string>495XWEJ924</string>
+					</dict>
+					<key>D5E755C01CE47E0F00E74FD4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+						<key>TestTargetID</key>
+						<string>D5E755A71CE47E0E00E74FD4</string>
+					</dict>
+					<key>D5E755CB1CE47E0F00E74FD4</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.2.1</string>
+						<key>TestTargetID</key>
+						<string>D5E755A71CE47E0E00E74FD4</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>D5E755A31CE47E0E00E74FD4</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>D5E7559F1CE47E0E00E74FD4</string>
+			<key>productRefGroup</key>
+			<string>D5E755A91CE47E0E00E74FD4</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>D5E755A71CE47E0E00E74FD4</string>
+				<string>D5E755C01CE47E0F00E74FD4</string>
+				<string>D5E755CB1CE47E0F00E74FD4</string>
+			</array>
+		</dict>
+		<key>D5E755A31CE47E0E00E74FD4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D5E755D31CE47E0F00E74FD4</string>
+				<string>D5E755D41CE47E0F00E74FD4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D5E755A41CE47E0E00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5EEC69F1CF9DF560057C365</string>
+				<string>D5BF7D0C1CE9C95200B87908</string>
+				<string>D5BF7D071CE9C95200B87908</string>
+				<string>D5BF7D081CE9C95200B87908</string>
+				<string>D5BF7D0A1CE9C95200B87908</string>
+				<string>D5BF7D0B1CE9C95200B87908</string>
+				<string>D5EEC69A1CF9D96D0057C365</string>
+				<string>D5BF7CE11CE9C2E000B87908</string>
+				<string>D5BF7D0D1CE9C95200B87908</string>
+				<string>D5EEC68D1CF9CAD70057C365</string>
+				<string>D5EEC6911CF9D9080057C365</string>
+				<string>D5BF7D091CE9C95200B87908</string>
+				<string>D5EEC6971CF9D9460057C365</string>
+				<string>D5EEC6941CF9D9210057C365</string>
+				<string>D5BF7CDE1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755A51CE47E0E00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>159EE0E2619E9CA1C97CFD9B</string>
+				<string>F352442B15858152498877A8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755A61CE47E0E00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5BF7CE41CE9C2E000B87908</string>
+				<string>D5C25F151CF8544E001E5F9B</string>
+				<string>D5BF7CEE1CE9C34300B87908</string>
+				<string>D5BF7CE71CE9C2E000B87908</string>
+				<string>D5BBD3731D4CC2A7003E464C</string>
+				<string>D5BF7CEA1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755A71CE47E0E00E74FD4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D5E755D51CE47E0F00E74FD4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B41C5731154FF04889D54951</string>
+				<string>D5E755A41CE47E0E00E74FD4</string>
+				<string>D5E755A51CE47E0E00E74FD4</string>
+				<string>D5E755A61CE47E0E00E74FD4</string>
+				<string>9321621E589AB4716DCB8316</string>
+				<string>F06459E91C8547E4EAF449D2</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TipCalculator</string>
+			<key>productName</key>
+			<string>TipCalculator</string>
+			<key>productReference</key>
+			<string>D5E755A81CE47E0E00E74FD4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>D5E755A81CE47E0E00E74FD4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TipCalculator.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D5E755A91CE47E0E00E74FD4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5E755A81CE47E0E00E74FD4</string>
+				<string>D5E755C11CE47E0F00E74FD4</string>
+				<string>D5E755CC1CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755AA1CE47E0E00E74FD4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5BF7CCB1CE9C2E000B87908</string>
+				<string>D5BF7CCF1CE9C2E000B87908</string>
+				<string>D5BF7CD01CE9C2E000B87908</string>
+				<string>D5BF7CD61CE9C2E000B87908</string>
+				<string>D5BF7CDA1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TipCalculator</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755BD1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5E755C61CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755BE1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755BF1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5BF7CE51CE9C2E000B87908</string>
+				<string>D5BF7CE81CE9C2E000B87908</string>
+				<string>D5BF7CEB1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755C01CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D5E755D81CE47E0F00E74FD4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D5E755BD1CE47E0F00E74FD4</string>
+				<string>D5E755BE1CE47E0F00E74FD4</string>
+				<string>D5E755BF1CE47E0F00E74FD4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D5E755C31CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TipCalculatorTests</string>
+			<key>productName</key>
+			<string>TipCalculatorTests</string>
+			<key>productReference</key>
+			<string>D5E755C11CE47E0F00E74FD4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>D5E755C11CE47E0F00E74FD4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TipCalculatorTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D5E755C21CE47E0F00E74FD4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D5E755A01CE47E0E00E74FD4</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D5E755A71CE47E0E00E74FD4</string>
+			<key>remoteInfo</key>
+			<string>TipCalculator</string>
+		</dict>
+		<key>D5E755C31CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>D5E755A71CE47E0E00E74FD4</string>
+			<key>targetProxy</key>
+			<string>D5E755C21CE47E0F00E74FD4</string>
+		</dict>
+		<key>D5E755C41CE47E0F00E74FD4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5E755C51CE47E0F00E74FD4</string>
+				<string>D5E755C71CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TipCalculatorTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755C51CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755C61CE47E0F00E74FD4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5E755C51CE47E0F00E74FD4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5E755C71CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755C81CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5E755D11CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755C91CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755CA1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>D5BF7CE61CE9C2E000B87908</string>
+				<string>D5BF7CE91CE9C2E000B87908</string>
+				<string>D5BF7CEC1CE9C2E000B87908</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D5E755CB1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D5E755DB1CE47E0F00E74FD4</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D5E755C81CE47E0F00E74FD4</string>
+				<string>D5E755C91CE47E0F00E74FD4</string>
+				<string>D5E755CA1CE47E0F00E74FD4</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D5E755CE1CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TipCalculatorUITests</string>
+			<key>productName</key>
+			<string>TipCalculatorUITests</string>
+			<key>productReference</key>
+			<string>D5E755CC1CE47E0F00E74FD4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>D5E755CC1CE47E0F00E74FD4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TipCalculatorUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>D5E755CD1CE47E0F00E74FD4</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D5E755A01CE47E0E00E74FD4</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>D5E755A71CE47E0E00E74FD4</string>
+			<key>remoteInfo</key>
+			<string>TipCalculator</string>
+		</dict>
+		<key>D5E755CE1CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>D5E755A71CE47E0E00E74FD4</string>
+			<key>targetProxy</key>
+			<string>D5E755CD1CE47E0F00E74FD4</string>
+		</dict>
+		<key>D5E755CF1CE47E0F00E74FD4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5E755D01CE47E0F00E74FD4</string>
+				<string>D5E755D21CE47E0F00E74FD4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TipCalculatorUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755D01CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TipCalculatorUITests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755D11CE47E0F00E74FD4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5E755D01CE47E0F00E74FD4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5E755D21CE47E0F00E74FD4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5E755D31CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D5E755D41CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.2</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D5E755D51CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D5E755D61CE47E0F00E74FD4</string>
+				<string>D5E755D71CE47E0F00E74FD4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D5E755D61CE47E0F00E74FD4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1615E93E335EB82EDE3766A7</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Distribution: Tirupati Balan (495XWEJ924)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>495XWEJ924</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculator/Supporting Files/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculator</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>d523d926-38b5-4884-b48e-a72dcfde2869</string>
+				<key>PROVISIONING_PROFILE_SPECIFIER</key>
+				<string>TIRUPATI_ADHOC_10_OCT</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D5E755D71CE47E0F00E74FD4</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C274AC7B004D9FC699FA7C80</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>CODE_SIGN_IDENTITY</key>
+				<string>iPhone Distribution: Tirupati Balan (495XWEJ924)</string>
+				<key>DEVELOPMENT_TEAM</key>
+				<string>495XWEJ924</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculator/Supporting Files/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculator</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>PROVISIONING_PROFILE</key>
+				<string>d523d926-38b5-4884-b48e-a72dcfde2869</string>
+				<key>PROVISIONING_PROFILE_SPECIFIER</key>
+				<string>TIRUPATI_ADHOC_10_OCT</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D5E755D81CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D5E755D91CE47E0F00E74FD4</string>
+				<string>D5E755DA1CE47E0F00E74FD4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D5E755D91CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculatorTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculatorTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TipCalculator.app/TipCalculator</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D5E755DA1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculatorTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculatorTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TipCalculator.app/TipCalculator</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D5E755DB1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>D5E755DC1CE47E0F00E74FD4</string>
+				<string>D5E755DD1CE47E0F00E74FD4</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D5E755DC1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculatorUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculatorUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TipCalculator</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>D5E755DD1CE47E0F00E74FD4</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TipCalculatorUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>com.celerstudio.TipCalculatorUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TipCalculator</string>
+				<key>USES_XCTRUNNER</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D5EEC6851CF9C9980057C365</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Categories</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6861CF9C9980057C365</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC6871CF9C9980057C365</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CoreData</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6871CF9C9980057C365</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Entities</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6881CF9C9980057C365</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC68B1CF9CAD70057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TCRootWireframe.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>wrapsLines</key>
+			<string>0</string>
+		</dict>
+		<key>D5EEC68C1CF9CAD70057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TCRootWireframe.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC68D1CF9CAD70057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC68C1CF9CAD70057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5EEC68E1CF9D8EE0057C365</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC68F1CF9D9080057C365</string>
+				<string>D5EEC6901CF9D9080057C365</string>
+				<string>D5EEC6921CF9D9210057C365</string>
+				<string>D5EEC6931CF9D9210057C365</string>
+				<string>D5EEC6951CF9D9460057C365</string>
+				<string>D5EEC6961CF9D9460057C365</string>
+				<string>D5EEC6981CF9D96D0057C365</string>
+				<string>D5EEC6991CF9D96D0057C365</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Cells</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC68F1CF9D9080057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TCBillTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6901CF9D9080057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TCBillTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>wrapsLines</key>
+			<string>0</string>
+		</dict>
+		<key>D5EEC6911CF9D9080057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC6901CF9D9080057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5EEC6921CF9D9210057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TCTipTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6931CF9D9210057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TCTipTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+			<key>wrapsLines</key>
+			<string>0</string>
+		</dict>
+		<key>D5EEC6941CF9D9210057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC6931CF9D9210057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5EEC6951CF9D9460057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TCNumberOfPeopleTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6961CF9D9460057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TCNumberOfPeopleTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6971CF9D9460057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC6961CF9D9460057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5EEC6981CF9D96D0057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TCResultTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC6991CF9D96D0057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TCResultTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC69A1CF9D96D0057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC6991CF9D96D0057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D5EEC69B1CF9DF560057C365</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC69C1CF9DF560057C365</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Vendor</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC69C1CF9DF560057C365</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D5EEC69D1CF9DF560057C365</string>
+				<string>D5EEC69E1CF9DF560057C365</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>ANStepperView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC69D1CF9DF560057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ANStepperView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC69E1CF9DF560057C365</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ANStepperView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D5EEC69F1CF9DF560057C365</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D5EEC69E1CF9DF560057C365</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>EAFD3CB0FA32F82A3898112F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AC96F0E04AEF47A35D2240A5</string>
+				<string>68705384DBF7B1DED384630F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06459E91C8547E4EAF449D2</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TipCalculator/Pods-TipCalculator-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F352442B15858152498877A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>68705384DBF7B1DED384630F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D5E755A01CE47E0E00E74FD4</string>
+</dict>
+</plist>
