@@ -1,6 +1,7 @@
 
 ![Language](https://img.shields.io/badge/language-objective--c-green.svg)
 ![License](https://img.shields.io/github/license/JakeLin/SwiftWeather.svg?style=flat)
+[![Build Status](https://travis-ci.org/tirupati17/tip-calculator-auto-layout-viper-objective-c.svg?branch=master)](https://travis-ci.org/tirupati17/tip-calculator-auto-layout-viper-objective-c)
 
 ![TIP-Calculator](https://raw.githubusercontent.com/tirupati17/tip-calculator-auto-layout-viper-objective-c/master/TipCalculator/Resources/Images/iphone_5s.png)
 
