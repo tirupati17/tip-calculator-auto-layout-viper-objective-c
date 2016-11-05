@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8
+xcode_project: TipCalculator.xcodeproj
+xcode_scheme: TipCalculator
+xcode_sdk: iphonesimulator10.0
